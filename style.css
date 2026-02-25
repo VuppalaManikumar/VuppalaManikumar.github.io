@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.auth-box {
+    max-width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.auth-box input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.restart-btn {
+    margin-top: 10px;
+    background: #ff9800;
+    color: white;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.grid {
+    width: 100%;
+    aspect-ratio: 1;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.cell {
+    background: #d6d6d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark .cell {
+    background: #333;
+}
