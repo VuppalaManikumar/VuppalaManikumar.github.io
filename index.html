@@ -4,7 +4,7 @@
   <title>2048 Pro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google AdSense Global Script -->
+  <!-- Google AdSense Global Script (ONLY ONCE) -->
   <script async 
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853419659880222"
     crossorigin="anonymous">
@@ -15,16 +15,30 @@
 
 <body>
 
-<!-- LOGIN PAGE -->
+<!-- ================= LOGIN PAGE ================= -->
 <div id="loginPage" class="auth-box">
   <h2>Login to 2048 Pro</h2>
+
+  <!-- Ad Above Login -->
+  <div style="margin:15px 0;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7853419659880222"
+         data-ad-slot="1284143845"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
   <input type="email" id="email" placeholder="Email">
   <input type="password" id="password" placeholder="Password">
   <button onclick="login()">Login</button>
   <button onclick="signup()">Sign Up</button>
 </div>
 
-<!-- GAME PAGE -->
+<!-- ================= GAME PAGE ================= -->
 <div id="gamePage" style="display:none;">
   <div class="container">
 
@@ -41,12 +55,12 @@
       <div id="highScore">High Score: 0</div>
     </div>
 
-    <!-- Ad Unit (Top Banner) -->
+    <!-- Top Banner Ad -->
     <div style="margin:15px 0;">
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-7853419659880222"
-           data-ad-slot="1234567890"
+           data-ad-slot="1284143845"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
       <script>
@@ -58,12 +72,12 @@
 
     <div class="grid" id="grid"></div>
 
-    <!-- Bottom Ad Unit -->
+    <!-- Bottom Banner Ad -->
     <div style="margin-top:20px;">
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-7853419659880222"
-           data-ad-slot="1234567890"
+           data-ad-slot="1284143845"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
       <script>
@@ -74,6 +88,7 @@
   </div>
 </div>
 
+<!-- ================= FOOTER ================= -->
 <footer style="text-align:center; margin-top:40px;">
   <a href="about.html">About</a> |
   <a href="privacy.html">Privacy</a> |
@@ -81,6 +96,7 @@
   <a href="contact.html">Contact</a>
 </footer>
 
+<!-- Firebase + Game Logic -->
 <script type="module" src="script.js"></script>
 
 </body>
